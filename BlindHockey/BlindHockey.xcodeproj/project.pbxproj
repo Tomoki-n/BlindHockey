@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA211AEB1C77EC3B008EDD5C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211AEA1C77EC3B008EDD5C /* AppDelegate.swift */; };
+		FA211AED1C77EC3B008EDD5C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = FA211AEC1C77EC3B008EDD5C /* GameScene.sks */; };
+		FA211AEF1C77EC3B008EDD5C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211AEE1C77EC3B008EDD5C /* GameScene.swift */; };
+		FA211AF11C77EC3B008EDD5C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211AF01C77EC3B008EDD5C /* GameViewController.swift */; };
+		FA211AF41C77EC3B008EDD5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA211AF21C77EC3B008EDD5C /* Main.storyboard */; };
+		FA211AF61C77EC3B008EDD5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA211AF51C77EC3B008EDD5C /* Assets.xcassets */; };
+		FA211AF91C77EC3B008EDD5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA211AF71C77EC3B008EDD5C /* LaunchScreen.storyboard */; };
+		FA211B041C77EC3C008EDD5C /* BlindHockeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211B031C77EC3C008EDD5C /* BlindHockeyTests.swift */; };
+		FA211B0F1C77EC3C008EDD5C /* BlindHockeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211B0E1C77EC3C008EDD5C /* BlindHockeyUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FA211B001C77EC3C008EDD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA211ADF1C77EC3B008EDD5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA211AE61C77EC3B008EDD5C;
+			remoteInfo = BlindHockey;
+		};
+		FA211B0B1C77EC3C008EDD5C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA211ADF1C77EC3B008EDD5C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA211AE61C77EC3B008EDD5C;
+			remoteInfo = BlindHockey;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA211AE71C77EC3B008EDD5C /* BlindHockey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlindHockey.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA211AEA1C77EC3B008EDD5C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA211AEC1C77EC3B008EDD5C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		FA211AEE1C77EC3B008EDD5C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FA211AF01C77EC3B008EDD5C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FA211AF31C77EC3B008EDD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA211AF51C77EC3B008EDD5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA211AF81C77EC3B008EDD5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA211AFA1C77EC3B008EDD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA211AFF1C77EC3C008EDD5C /* BlindHockeyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlindHockeyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA211B031C77EC3C008EDD5C /* BlindHockeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindHockeyTests.swift; sourceTree = "<group>"; };
+		FA211B051C77EC3C008EDD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA211B0A1C77EC3C008EDD5C /* BlindHockeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlindHockeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA211B0E1C77EC3C008EDD5C /* BlindHockeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindHockeyUITests.swift; sourceTree = "<group>"; };
+		FA211B101C77EC3C008EDD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA211AE41C77EC3B008EDD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA211AFC1C77EC3C008EDD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA211B071C77EC3C008EDD5C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FA211ADE1C77EC3B008EDD5C = {
+			isa = PBXGroup;
+			children = (
+				FA211AE91C77EC3B008EDD5C /* BlindHockey */,
+				FA211B021C77EC3C008EDD5C /* BlindHockeyTests */,
+				FA211B0D1C77EC3C008EDD5C /* BlindHockeyUITests */,
+				FA211AE81C77EC3B008EDD5C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA211AE81C77EC3B008EDD5C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA211AE71C77EC3B008EDD5C /* BlindHockey.app */,
+				FA211AFF1C77EC3C008EDD5C /* BlindHockeyTests.xctest */,
+				FA211B0A1C77EC3C008EDD5C /* BlindHockeyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA211AE91C77EC3B008EDD5C /* BlindHockey */ = {
+			isa = PBXGroup;
+			children = (
+				FA211AEA1C77EC3B008EDD5C /* AppDelegate.swift */,
+				FA211AEC1C77EC3B008EDD5C /* GameScene.sks */,
+				FA211AEE1C77EC3B008EDD5C /* GameScene.swift */,
+				FA211AF01C77EC3B008EDD5C /* GameViewController.swift */,
+				FA211AF21C77EC3B008EDD5C /* Main.storyboard */,
+				FA211AF51C77EC3B008EDD5C /* Assets.xcassets */,
+				FA211AF71C77EC3B008EDD5C /* LaunchScreen.storyboard */,
+				FA211AFA1C77EC3B008EDD5C /* Info.plist */,
+			);
+			path = BlindHockey;
+			sourceTree = "<group>";
+		};
+		FA211B021C77EC3C008EDD5C /* BlindHockeyTests */ = {
+			isa = PBXGroup;
+			children = (
+				FA211B031C77EC3C008EDD5C /* BlindHockeyTests.swift */,
+				FA211B051C77EC3C008EDD5C /* Info.plist */,
+			);
+			path = BlindHockeyTests;
+			sourceTree = "<group>";
+		};
+		FA211B0D1C77EC3C008EDD5C /* BlindHockeyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FA211B0E1C77EC3C008EDD5C /* BlindHockeyUITests.swift */,
+				FA211B101C77EC3C008EDD5C /* Info.plist */,
+			);
+			path = BlindHockeyUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA211AE61C77EC3B008EDD5C /* BlindHockey */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA211B131C77EC3C008EDD5C /* Build configuration list for PBXNativeTarget "BlindHockey" */;
+			buildPhases = (
+				FA211AE31C77EC3B008EDD5C /* Sources */,
+				FA211AE41C77EC3B008EDD5C /* Frameworks */,
+				FA211AE51C77EC3B008EDD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BlindHockey;
+			productName = BlindHockey;
+			productReference = FA211AE71C77EC3B008EDD5C /* BlindHockey.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FA211AFE1C77EC3C008EDD5C /* BlindHockeyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA211B161C77EC3C008EDD5C /* Build configuration list for PBXNativeTarget "BlindHockeyTests" */;
+			buildPhases = (
+				FA211AFB1C77EC3C008EDD5C /* Sources */,
+				FA211AFC1C77EC3C008EDD5C /* Frameworks */,
+				FA211AFD1C77EC3C008EDD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA211B011C77EC3C008EDD5C /* PBXTargetDependency */,
+			);
+			name = BlindHockeyTests;
+			productName = BlindHockeyTests;
+			productReference = FA211AFF1C77EC3C008EDD5C /* BlindHockeyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FA211B091C77EC3C008EDD5C /* BlindHockeyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA211B191C77EC3C008EDD5C /* Build configuration list for PBXNativeTarget "BlindHockeyUITests" */;
+			buildPhases = (
+				FA211B061C77EC3C008EDD5C /* Sources */,
+				FA211B071C77EC3C008EDD5C /* Frameworks */,
+				FA211B081C77EC3C008EDD5C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FA211B0C1C77EC3C008EDD5C /* PBXTargetDependency */,
+			);
+			name = BlindHockeyUITests;
+			productName = BlindHockeyUITests;
+			productReference = FA211B0A1C77EC3C008EDD5C /* BlindHockeyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA211ADF1C77EC3B008EDD5C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Nishinaka Tomoki";
+				TargetAttributes = {
+					FA211AE61C77EC3B008EDD5C = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					FA211AFE1C77EC3C008EDD5C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FA211AE61C77EC3B008EDD5C;
+					};
+					FA211B091C77EC3C008EDD5C = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = FA211AE61C77EC3B008EDD5C;
+					};
+				};
+			};
+			buildConfigurationList = FA211AE21C77EC3B008EDD5C /* Build configuration list for PBXProject "BlindHockey" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA211ADE1C77EC3B008EDD5C;
+			productRefGroup = FA211AE81C77EC3B008EDD5C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA211AE61C77EC3B008EDD5C /* BlindHockey */,
+				FA211AFE1C77EC3C008EDD5C /* BlindHockeyTests */,
+				FA211B091C77EC3C008EDD5C /* BlindHockeyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA211AE51C77EC3B008EDD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA211AED1C77EC3B008EDD5C /* GameScene.sks in Resources */,
+				FA211AF91C77EC3B008EDD5C /* LaunchScreen.storyboard in Resources */,
+				FA211AF61C77EC3B008EDD5C /* Assets.xcassets in Resources */,
+				FA211AF41C77EC3B008EDD5C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA211AFD1C77EC3C008EDD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA211B081C77EC3C008EDD5C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA211AE31C77EC3B008EDD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA211AEF1C77EC3B008EDD5C /* GameScene.swift in Sources */,
+				FA211AF11C77EC3B008EDD5C /* GameViewController.swift in Sources */,
+				FA211AEB1C77EC3B008EDD5C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA211AFB1C77EC3C008EDD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA211B041C77EC3C008EDD5C /* BlindHockeyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA211B061C77EC3C008EDD5C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA211B0F1C77EC3C008EDD5C /* BlindHockeyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FA211B011C77EC3C008EDD5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA211AE61C77EC3B008EDD5C /* BlindHockey */;
+			targetProxy = FA211B001C77EC3C008EDD5C /* PBXContainerItemProxy */;
+		};
+		FA211B0C1C77EC3C008EDD5C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA211AE61C77EC3B008EDD5C /* BlindHockey */;
+			targetProxy = FA211B0B1C77EC3C008EDD5C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA211AF21C77EC3B008EDD5C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA211AF31C77EC3B008EDD5C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA211AF71C77EC3B008EDD5C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA211AF81C77EC3B008EDD5C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA211B111C77EC3C008EDD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA211B121C77EC3C008EDD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA211B141C77EC3C008EDD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlindHockey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.gifu-nct.elec.BlindHockey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FA211B151C77EC3C008EDD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BlindHockey/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.gifu-nct.elec.BlindHockey";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FA211B171C77EC3C008EDD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = BlindHockeyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.gifu-nct.elec.BlindHockeyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlindHockey.app/BlindHockey";
+			};
+			name = Debug;
+		};
+		FA211B181C77EC3C008EDD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BlindHockeyTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.gifu-nct.elec.BlindHockeyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BlindHockey.app/BlindHockey";
+			};
+			name = Release;
+		};
+		FA211B1A1C77EC3C008EDD5C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = BlindHockeyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.gifu-nct.elec.BlindHockeyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BlindHockey;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		FA211B1B1C77EC3C008EDD5C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BlindHockeyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.gifu-nct.elec.BlindHockeyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BlindHockey;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA211AE21C77EC3B008EDD5C /* Build configuration list for PBXProject "BlindHockey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA211B111C77EC3C008EDD5C /* Debug */,
+				FA211B121C77EC3C008EDD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA211B131C77EC3C008EDD5C /* Build configuration list for PBXNativeTarget "BlindHockey" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA211B141C77EC3C008EDD5C /* Debug */,
+				FA211B151C77EC3C008EDD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA211B161C77EC3C008EDD5C /* Build configuration list for PBXNativeTarget "BlindHockeyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA211B171C77EC3C008EDD5C /* Debug */,
+				FA211B181C77EC3C008EDD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FA211B191C77EC3C008EDD5C /* Build configuration list for PBXNativeTarget "BlindHockeyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA211B1A1C77EC3C008EDD5C /* Debug */,
+				FA211B1B1C77EC3C008EDD5C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA211ADF1C77EC3B008EDD5C /* Project object */;
+}
