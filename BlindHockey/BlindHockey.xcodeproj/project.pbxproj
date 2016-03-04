@@ -16,6 +16,17 @@
 		FA211AF91C77EC3B008EDD5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA211AF71C77EC3B008EDD5C /* LaunchScreen.storyboard */; };
 		FA211B041C77EC3C008EDD5C /* BlindHockeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211B031C77EC3C008EDD5C /* BlindHockeyTests.swift */; };
 		FA211B0F1C77EC3C008EDD5C /* BlindHockeyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211B0E1C77EC3C008EDD5C /* BlindHockeyUITests.swift */; };
+		FA211B1D1C77F047008EDD5C /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211B1C1C77F047008EDD5C /* BaseViewController.swift */; };
+		FA211B1F1C77F369008EDD5C /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA211B1E1C77F369008EDD5C /* CoreBluetooth.framework */; };
+		FA211B211C77F396008EDD5C /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA211B201C77F396008EDD5C /* MultipeerConnectivity.framework */; };
+		FA211B231C77FF9E008EDD5C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211B221C77FF9E008EDD5C /* MenuViewController.swift */; };
+		FA211B251C77FFE4008EDD5C /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211B241C77FFE4008EDD5C /* ConnectionViewController.swift */; };
+		FA96C6D81C88855800B24EC4 /* p1b.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6D41C88855800B24EC4 /* p1b.png */; };
+		FA96C6D91C88855800B24EC4 /* p2b.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6D51C88855800B24EC4 /* p2b.png */; };
+		FA96C6DA1C88855800B24EC4 /* p2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6D61C88855800B24EC4 /* p2.png */; };
+		FA96C6DB1C88855800B24EC4 /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6D71C88855800B24EC4 /* p1.png */; };
+		FA96C6DD1C892D3E00B24EC4 /* OverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96C6DC1C892D3E00B24EC4 /* OverViewController.swift */; };
+		FA96C6DF1C892D5500B24EC4 /* ClearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96C6DE1C892D5500B24EC4 /* ClearViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +62,17 @@
 		FA211B0A1C77EC3C008EDD5C /* BlindHockeyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlindHockeyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA211B0E1C77EC3C008EDD5C /* BlindHockeyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlindHockeyUITests.swift; sourceTree = "<group>"; };
 		FA211B101C77EC3C008EDD5C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA211B1C1C77F047008EDD5C /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		FA211B1E1C77F369008EDD5C /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		FA211B201C77F396008EDD5C /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
+		FA211B221C77FF9E008EDD5C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FA211B241C77FFE4008EDD5C /* ConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
+		FA96C6D41C88855800B24EC4 /* p1b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = p1b.png; path = ../../../../../Downloads/p1b.png; sourceTree = "<group>"; };
+		FA96C6D51C88855800B24EC4 /* p2b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = p2b.png; path = ../../../../../Downloads/p2b.png; sourceTree = "<group>"; };
+		FA96C6D61C88855800B24EC4 /* p2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = p2.png; path = ../../../../../Downloads/p2.png; sourceTree = "<group>"; };
+		FA96C6D71C88855800B24EC4 /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = p1.png; path = ../../../../../Downloads/p1.png; sourceTree = "<group>"; };
+		FA96C6DC1C892D3E00B24EC4 /* OverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverViewController.swift; sourceTree = "<group>"; };
+		FA96C6DE1C892D5500B24EC4 /* ClearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +80,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA211B211C77F396008EDD5C /* MultipeerConnectivity.framework in Frameworks */,
+				FA211B1F1C77F369008EDD5C /* CoreBluetooth.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +105,8 @@
 		FA211ADE1C77EC3B008EDD5C = {
 			isa = PBXGroup;
 			children = (
+				FA211B201C77F396008EDD5C /* MultipeerConnectivity.framework */,
+				FA211B1E1C77F369008EDD5C /* CoreBluetooth.framework */,
 				FA211AE91C77EC3B008EDD5C /* BlindHockey */,
 				FA211B021C77EC3C008EDD5C /* BlindHockeyTests */,
 				FA211B0D1C77EC3C008EDD5C /* BlindHockeyUITests */,
@@ -105,10 +131,16 @@
 				FA211AEC1C77EC3B008EDD5C /* GameScene.sks */,
 				FA211AEE1C77EC3B008EDD5C /* GameScene.swift */,
 				FA211AF01C77EC3B008EDD5C /* GameViewController.swift */,
+				FA211B221C77FF9E008EDD5C /* MenuViewController.swift */,
+				FA211B241C77FFE4008EDD5C /* ConnectionViewController.swift */,
 				FA211AF21C77EC3B008EDD5C /* Main.storyboard */,
+				FA96C6DE1C892D5500B24EC4 /* ClearViewController.swift */,
+				FA96C6DC1C892D3E00B24EC4 /* OverViewController.swift */,
 				FA211AF51C77EC3B008EDD5C /* Assets.xcassets */,
 				FA211AF71C77EC3B008EDD5C /* LaunchScreen.storyboard */,
 				FA211AFA1C77EC3B008EDD5C /* Info.plist */,
+				FA211B1C1C77F047008EDD5C /* BaseViewController.swift */,
+				FA96C6D31C88854D00B24EC4 /* image */,
 			);
 			path = BlindHockey;
 			sourceTree = "<group>";
@@ -129,6 +161,17 @@
 				FA211B101C77EC3C008EDD5C /* Info.plist */,
 			);
 			path = BlindHockeyUITests;
+			sourceTree = "<group>";
+		};
+		FA96C6D31C88854D00B24EC4 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				FA96C6D41C88855800B24EC4 /* p1b.png */,
+				FA96C6D51C88855800B24EC4 /* p2b.png */,
+				FA96C6D61C88855800B24EC4 /* p2.png */,
+				FA96C6D71C88855800B24EC4 /* p1.png */,
+			);
+			name = image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,8 +280,12 @@
 			files = (
 				FA211AED1C77EC3B008EDD5C /* GameScene.sks in Resources */,
 				FA211AF91C77EC3B008EDD5C /* LaunchScreen.storyboard in Resources */,
+				FA96C6DA1C88855800B24EC4 /* p2.png in Resources */,
 				FA211AF61C77EC3B008EDD5C /* Assets.xcassets in Resources */,
+				FA96C6DB1C88855800B24EC4 /* p1.png in Resources */,
 				FA211AF41C77EC3B008EDD5C /* Main.storyboard in Resources */,
+				FA96C6D81C88855800B24EC4 /* p1b.png in Resources */,
+				FA96C6D91C88855800B24EC4 /* p2b.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +311,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA211AEF1C77EC3B008EDD5C /* GameScene.swift in Sources */,
+				FA211B231C77FF9E008EDD5C /* MenuViewController.swift in Sources */,
+				FA96C6DF1C892D5500B24EC4 /* ClearViewController.swift in Sources */,
+				FA211B251C77FFE4008EDD5C /* ConnectionViewController.swift in Sources */,
+				FA211B1D1C77F047008EDD5C /* BaseViewController.swift in Sources */,
+				FA96C6DD1C892D3E00B24EC4 /* OverViewController.swift in Sources */,
 				FA211AF11C77EC3B008EDD5C /* GameViewController.swift in Sources */,
 				FA211AEB1C77EC3B008EDD5C /* AppDelegate.swift in Sources */,
 			);
@@ -356,7 +408,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -394,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -406,9 +458,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlindHockey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.gifu-nct.elec.BlindHockey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -417,9 +471,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = BlindHockey/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "jp.ac.gifu-nct.elec.BlindHockey";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -492,6 +548,7 @@
 				FA211B151C77EC3C008EDD5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA211B161C77EC3C008EDD5C /* Build configuration list for PBXNativeTarget "BlindHockeyTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +557,7 @@
 				FA211B181C77EC3C008EDD5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA211B191C77EC3C008EDD5C /* Build configuration list for PBXNativeTarget "BlindHockeyUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +566,7 @@
 				FA211B1B1C77EC3C008EDD5C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

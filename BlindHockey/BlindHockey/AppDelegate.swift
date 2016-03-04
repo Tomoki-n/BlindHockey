@@ -12,8 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    var player: Int = 0
+    var controller:GameViewController!
+    var firstturn: Bool = false
+    var myturn:Bool = false
+    var getdata = false
+    var posx: CGFloat = 0
+    var balldx: CGFloat = 0
+    var balldy: CGFloat = 0
+    var ene_dead: Bool = false
+    var ene_rebone: Bool = false
+    
+    
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         return true

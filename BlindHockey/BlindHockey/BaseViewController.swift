@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import UIKit
+import MultipeerConnectivity
+import CoreLocation
+import SpriteKit
+
+class BaseViewController: UIViewController  {
+    
+    
+    var browser : MCBrowserViewController!
+    var assistant : MCAdvertiserAssistant!
+    var session : MCSession!
+    var peerID: MCPeerID!
+    var app:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    
+    
+}
