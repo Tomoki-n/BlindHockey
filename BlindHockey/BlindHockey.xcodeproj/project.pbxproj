@@ -21,12 +21,15 @@
 		FA211B211C77F396008EDD5C /* MultipeerConnectivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA211B201C77F396008EDD5C /* MultipeerConnectivity.framework */; };
 		FA211B231C77FF9E008EDD5C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211B221C77FF9E008EDD5C /* MenuViewController.swift */; };
 		FA211B251C77FFE4008EDD5C /* ConnectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA211B241C77FFE4008EDD5C /* ConnectionViewController.swift */; };
-		FA96C6D81C88855800B24EC4 /* p1b.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6D41C88855800B24EC4 /* p1b.png */; };
-		FA96C6D91C88855800B24EC4 /* p2b.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6D51C88855800B24EC4 /* p2b.png */; };
-		FA96C6DA1C88855800B24EC4 /* p2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6D61C88855800B24EC4 /* p2.png */; };
-		FA96C6DB1C88855800B24EC4 /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6D71C88855800B24EC4 /* p1.png */; };
 		FA96C6DD1C892D3E00B24EC4 /* OverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96C6DC1C892D3E00B24EC4 /* OverViewController.swift */; };
 		FA96C6DF1C892D5500B24EC4 /* ClearViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA96C6DE1C892D5500B24EC4 /* ClearViewController.swift */; };
+		FA96C6E11C8961AE00B24EC4 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA96C6E01C8961AE00B24EC4 /* AVFoundation.framework */; };
+		FA96C6E41C89633900B24EC4 /* sm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6E21C89633900B24EC4 /* sm.mp3 */; };
+		FA96C6E51C89633900B24EC4 /* at.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6E31C89633900B24EC4 /* at.mp3 */; };
+		FA96C6EA1C89634800B24EC4 /* p2b.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6E61C89634800B24EC4 /* p2b.png */; };
+		FA96C6EB1C89634800B24EC4 /* p2.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6E71C89634800B24EC4 /* p2.png */; };
+		FA96C6EC1C89634800B24EC4 /* p1.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6E81C89634800B24EC4 /* p1.png */; };
+		FA96C6ED1C89634800B24EC4 /* p1b.png in Resources */ = {isa = PBXBuildFile; fileRef = FA96C6E91C89634800B24EC4 /* p1b.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,12 +70,15 @@
 		FA211B201C77F396008EDD5C /* MultipeerConnectivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MultipeerConnectivity.framework; path = System/Library/Frameworks/MultipeerConnectivity.framework; sourceTree = SDKROOT; };
 		FA211B221C77FF9E008EDD5C /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		FA211B241C77FFE4008EDD5C /* ConnectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConnectionViewController.swift; sourceTree = "<group>"; };
-		FA96C6D41C88855800B24EC4 /* p1b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = p1b.png; path = ../../../../../Downloads/p1b.png; sourceTree = "<group>"; };
-		FA96C6D51C88855800B24EC4 /* p2b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = p2b.png; path = ../../../../../Downloads/p2b.png; sourceTree = "<group>"; };
-		FA96C6D61C88855800B24EC4 /* p2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = p2.png; path = ../../../../../Downloads/p2.png; sourceTree = "<group>"; };
-		FA96C6D71C88855800B24EC4 /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = p1.png; path = ../../../../../Downloads/p1.png; sourceTree = "<group>"; };
 		FA96C6DC1C892D3E00B24EC4 /* OverViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverViewController.swift; sourceTree = "<group>"; };
 		FA96C6DE1C892D5500B24EC4 /* ClearViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClearViewController.swift; sourceTree = "<group>"; };
+		FA96C6E01C8961AE00B24EC4 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		FA96C6E21C89633900B24EC4 /* sm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sm.mp3; sourceTree = "<group>"; };
+		FA96C6E31C89633900B24EC4 /* at.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = at.mp3; sourceTree = "<group>"; };
+		FA96C6E61C89634800B24EC4 /* p2b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2b.png; sourceTree = "<group>"; };
+		FA96C6E71C89634800B24EC4 /* p2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p2.png; sourceTree = "<group>"; };
+		FA96C6E81C89634800B24EC4 /* p1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1.png; sourceTree = "<group>"; };
+		FA96C6E91C89634800B24EC4 /* p1b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = p1b.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA96C6E11C8961AE00B24EC4 /* AVFoundation.framework in Frameworks */,
 				FA211B211C77F396008EDD5C /* MultipeerConnectivity.framework in Frameworks */,
 				FA211B1F1C77F369008EDD5C /* CoreBluetooth.framework in Frameworks */,
 			);
@@ -105,6 +112,7 @@
 		FA211ADE1C77EC3B008EDD5C = {
 			isa = PBXGroup;
 			children = (
+				FA96C6E01C8961AE00B24EC4 /* AVFoundation.framework */,
 				FA211B201C77F396008EDD5C /* MultipeerConnectivity.framework */,
 				FA211B1E1C77F369008EDD5C /* CoreBluetooth.framework */,
 				FA211AE91C77EC3B008EDD5C /* BlindHockey */,
@@ -127,6 +135,8 @@
 		FA211AE91C77EC3B008EDD5C /* BlindHockey */ = {
 			isa = PBXGroup;
 			children = (
+				FA96C6E21C89633900B24EC4 /* sm.mp3 */,
+				FA96C6E31C89633900B24EC4 /* at.mp3 */,
 				FA211AEA1C77EC3B008EDD5C /* AppDelegate.swift */,
 				FA211AEC1C77EC3B008EDD5C /* GameScene.sks */,
 				FA211AEE1C77EC3B008EDD5C /* GameScene.swift */,
@@ -166,10 +176,10 @@
 		FA96C6D31C88854D00B24EC4 /* image */ = {
 			isa = PBXGroup;
 			children = (
-				FA96C6D41C88855800B24EC4 /* p1b.png */,
-				FA96C6D51C88855800B24EC4 /* p2b.png */,
-				FA96C6D61C88855800B24EC4 /* p2.png */,
-				FA96C6D71C88855800B24EC4 /* p1.png */,
+				FA96C6E61C89634800B24EC4 /* p2b.png */,
+				FA96C6E71C89634800B24EC4 /* p2.png */,
+				FA96C6E81C89634800B24EC4 /* p1.png */,
+				FA96C6E91C89634800B24EC4 /* p1b.png */,
 			);
 			name = image;
 			sourceTree = "<group>";
@@ -278,14 +288,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA96C6EC1C89634800B24EC4 /* p1.png in Resources */,
+				FA96C6ED1C89634800B24EC4 /* p1b.png in Resources */,
+				FA96C6E41C89633900B24EC4 /* sm.mp3 in Resources */,
 				FA211AED1C77EC3B008EDD5C /* GameScene.sks in Resources */,
 				FA211AF91C77EC3B008EDD5C /* LaunchScreen.storyboard in Resources */,
-				FA96C6DA1C88855800B24EC4 /* p2.png in Resources */,
+				FA96C6EB1C89634800B24EC4 /* p2.png in Resources */,
+				FA96C6E51C89633900B24EC4 /* at.mp3 in Resources */,
+				FA96C6EA1C89634800B24EC4 /* p2b.png in Resources */,
 				FA211AF61C77EC3B008EDD5C /* Assets.xcassets in Resources */,
-				FA96C6DB1C88855800B24EC4 /* p1.png in Resources */,
 				FA211AF41C77EC3B008EDD5C /* Main.storyboard in Resources */,
-				FA96C6D81C88855800B24EC4 /* p1b.png in Resources */,
-				FA96C6D91C88855800B24EC4 /* p2b.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

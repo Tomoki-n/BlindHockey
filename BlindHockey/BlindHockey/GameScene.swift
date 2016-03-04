@@ -8,6 +8,61 @@
 
 import SpriteKit
 import UIKit
+import AVFoundation
+import Foundation
+
+extension String {
+    
+    /// String -> NSString に変換する
+    func to_ns() -> NSString {
+        return (self as NSString)
+    }
+    
+    func substringFromIndex(index: Int) -> String {
+        return to_ns().substringFromIndex(index)
+    }
+    
+    func substringToIndex(index: Int) -> String {
+        return to_ns().substringToIndex(index)
+    }
+    
+    func substringWithRange(range: NSRange) -> String {
+        return to_ns().substringWithRange(range)
+    }
+    
+    var lastPathComponent: String {
+        return to_ns().lastPathComponent
+    }
+    
+    var pathExtension: String {
+        return to_ns().pathExtension
+    }
+    
+    var stringByDeletingLastPathComponent: String {
+        return to_ns().stringByDeletingLastPathComponent
+    }
+    
+    var stringByDeletingPathExtension: String {
+        return to_ns().stringByDeletingPathExtension
+    }
+    
+    var pathComponents: [String] {
+        return to_ns().pathComponents
+    }
+    
+    var length: Int {
+        return self.characters.count
+    }
+    
+    func stringByAppendingPathComponent(path: String) -> String {
+        return to_ns().stringByAppendingPathComponent(path)
+    }
+    
+    func stringByAppendingPathExtension(ext: String) -> String? {
+        return to_ns().stringByAppendingPathExtension(ext)
+    }
+    
+}
 
 class GameScene: SKScene,SKPhysicsContactDelegate {
     
@@ -53,6 +108,18 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
     var life:Int = 5
     var ene_life:Int = 5
     
+    //hp
+    var hp1_1:SKSpriteNode!
+    var hp1_2:SKSpriteNode!
+    var hp1_3:SKSpriteNode!
+    var hp1_4:SKSpriteNode!
+    var hp1_5:SKSpriteNode!
+    var hp2_1:SKSpriteNode!
+    var hp2_2:SKSpriteNode!
+    var hp2_3:SKSpriteNode!
+    var hp2_4:SKSpriteNode!
+    var hp2_5:SKSpriteNode!
+    
     override init(size:CGSize){
         super.init(size: size)
         
@@ -67,6 +134,7 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         
         if app.firstturn == false{
             outdeadzone = false
+            start = true
         }
         //player
         x = CGRectGetMidX(self.frame)
@@ -80,7 +148,7 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         if app.firstturn{
             //ball
             bx = x
-            by = y + 40
+            by = y + 20
             ball = SKSpriteNode(color:UIColor.yellowColor(),size:CGSizeMake(b_width, b_height))
             ball.position = CGPointMake(bx, by)
             ball.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(b_width, b_height))
@@ -165,14 +233,45 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         self.view!.addSubview(rightturnbtn)
         
         for i in 1...5 {
-            var hp1:SKSpriteNode = SKSpriteNode(imageNamed: "p1.png")
+            var hp1:SKSpriteNode = SKSpriteNode(imageNamed: "p1b.png")
             hp1.position = CGPointMake(CGFloat(i * 30), (self.view?.bounds.height)! - 20)
             self.addChild(hp1)
-            var hp2:SKSpriteNode = SKSpriteNode(imageNamed: "p2.png")
+            var hp2:SKSpriteNode = SKSpriteNode(imageNamed: "p2b.png")
             hp2.position = CGPointMake(CGFloat(i * 30 + 180), (self.view?.bounds.height)! - 20)
             self.addChild(hp2)
         }
         
+        hp1_1 = SKSpriteNode(imageNamed: "p1.png")
+        hp1_1.position = CGPointMake(CGFloat(1 * 30), (self.view?.bounds.height)! - 20)
+        self.addChild(hp1_1)
+        hp1_2 = SKSpriteNode(imageNamed: "p1.png")
+        hp1_2.position = CGPointMake(CGFloat(2 * 30), (self.view?.bounds.height)! - 20)
+        self.addChild(hp1_2)
+        hp1_3 = SKSpriteNode(imageNamed: "p1.png")
+        hp1_3.position = CGPointMake(CGFloat(3 * 30), (self.view?.bounds.height)! - 20)
+        self.addChild(hp1_3)
+        hp1_4 = SKSpriteNode(imageNamed: "p1.png")
+        hp1_4.position = CGPointMake(CGFloat(4 * 30), (self.view?.bounds.height)! - 20)
+        self.addChild(hp1_4)
+        hp1_5 = SKSpriteNode(imageNamed: "p1.png")
+        hp1_5.position = CGPointMake(CGFloat(5 * 30), (self.view?.bounds.height)! - 20)
+        self.addChild(hp1_5)
+        
+        hp2_1 = SKSpriteNode(imageNamed: "p2.png")
+        hp2_1.position = CGPointMake(CGFloat(1 * 30 + 180), (self.view?.bounds.height)! - 20)
+        self.addChild(hp2_1)
+        hp2_2 = SKSpriteNode(imageNamed: "p2.png")
+        hp2_2.position = CGPointMake(CGFloat(2 * 30 + 180), (self.view?.bounds.height)! - 20)
+        self.addChild(hp2_2)
+        hp2_3 = SKSpriteNode(imageNamed: "p2.png")
+        hp2_3.position = CGPointMake(CGFloat(3 * 30 + 180), (self.view?.bounds.height)! - 20)
+        self.addChild(hp2_3)
+        hp2_4 = SKSpriteNode(imageNamed: "p2.png")
+        hp2_4.position = CGPointMake(CGFloat(4 * 30 + 180), (self.view?.bounds.height)! - 20)
+        self.addChild(hp2_4)
+        hp2_5 = SKSpriteNode(imageNamed: "p2.png")
+        hp2_5.position = CGPointMake(CGFloat(5 * 30 + 180), (self.view?.bounds.height)! - 20)
+        self.addChild(hp2_5)
         
         self.addChild(player)
         if app.firstturn || app.myturn{
@@ -215,9 +314,13 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         switch sender.tag {
         case 0:
             self.player.position.x -= 5
+            if !start{
+                self.ball.position.x -= 5
+            }
             btnpressd = true
             btntag = 0
         case 1:
+            if start{
             smash = true
             let upbar:SKAction = SKAction.moveByX(0, y:50, duration: 0.1)
             player.runAction(upbar)
@@ -225,8 +328,12 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             player.runAction(downbar,completion: {() -> Void in
                 self.smash = false
             })
+            }
         case 3:
             self.player.position.x += 5
+            if !start{
+                self.ball.position.x += 5
+            }
             btnpressd = true
             btntag = 3
         default:
@@ -259,26 +366,24 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
     
     func rebones(){
         print("func rebone")
+        self.life--
+        switch self.life {
+        case 4 :
+           hp1_1.removeFromParent()
+        case 3 :
+            hp1_2.removeFromParent()
+
+        case 2 :
+            hp1_3.removeFromParent()
+
+        case 1 :
+            hp1_4.removeFromParent()
+
+        default:
+            break
+        }
         
-            var hp1:SKSpriteNode = SKSpriteNode(imageNamed: "p1b.png")
-            hp1.position = CGPointMake(CGFloat((5 - self.life) * 30), (self.view?.bounds.height)! - 20)
-            self.addChild(hp1)
-    
-        
-        bx = x
-        by = y + 40
-        ball = SKSpriteNode(color:UIColor.yellowColor(),size:CGSizeMake(b_width, b_height))
-        ball.position = CGPointMake(bx, by)
-        ball.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(b_width, b_height))
-        ball.physicsBody?.usesPreciseCollisionDetection = true
-        ball.physicsBody?.collisionBitMask = ballCategory
-        ball.physicsBody?.contactTestBitMask = blockCategory|deadCategory|playerCategory
-        ball.physicsBody?.allowsRotation = false
-        ball.physicsBody?.restitution = 1
-        ball.physicsBody?.friction = 0
-        ball.physicsBody?.linearDamping = 0
-        self.turn = false
-        self.addChild(ball)
+     
     }
     
     func deads(){
@@ -293,16 +398,27 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
     func ene_deads(){
      print("func enedead")
     
-        
         self.app.controller.performSegueWithIdentifier("clear", sender: nil)
         
     }
     
     func ene_rebones(){
-        print("func enerebone")
-            var hp2:SKSpriteNode = SKSpriteNode(imageNamed: "p2b.png")
-            hp2.position = CGPointMake(CGFloat( (5 - self.ene_life) * 30 + 180  ), (self.view?.bounds.height)! - 20)
-            self.addChild(hp2)
+        self.ene_life--
+        switch self.ene_life {
+        case 4 :
+            hp2_1.removeFromParent()
+        case 3 :
+            hp2_2.removeFromParent()
+            
+        case 2 :
+            hp2_3.removeFromParent()
+            
+        case 1 :
+            hp2_4.removeFromParent()
+
+        default:
+            break
+        }
         
         
     }
@@ -338,10 +454,8 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         }
         if(first.collisionBitMask == deadCategory){
             switch second.collisionBitMask{
-            case deadCategory :
+            
                
-                print("remove2")
-                self.ball.removeFromParent()
                 
             default:
                 break
@@ -355,10 +469,9 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             case playerCategory:
                 accelerate()
                 //self.ball.physicsBody?.affectedByGravity = true
-                
                 if smash {
                     print("smash")
-                    let ballVel = CGVector(dx:(self.ball.physicsBody?.velocity.dx)! / 8 ,dy:(self.ball.physicsBody?.velocity.dy)! + 50 )
+                    let ballVel = CGVector(dx:(self.ball.physicsBody?.velocity.dx)! * 0.8  ,dy:(self.ball.physicsBody?.velocity.dy)! + 50 )
                     ball.physicsBody?.velocity = ballVel
                     
                 //self.ball.physicsBody?.affectedByGravity = true
@@ -370,6 +483,24 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             
         }
         
+    }
+    
+    func play(soundName:String,state:Int){
+        let soundPath = NSBundle.mainBundle().bundlePath.stringByAppendingPathComponent(soundName)
+        let url:NSURL? = NSURL.fileURLWithPath(soundPath)
+        var player: AVAudioPlayer!
+        do{
+            player = try AVAudioPlayer(contentsOfURL: url!, fileTypeHint: nil)
+            
+        }catch{
+            
+        }// Optional Chainingを使う。
+        if let thePlayer = player {
+            
+            if(state==1){thePlayer.numberOfLoops = -1}
+            thePlayer.prepareToPlay()
+            thePlayer.play()
+        }
     }
     
     override func update(currentTime: CFTimeInterval) {
@@ -384,9 +515,10 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         
         if app.ene_rebone{
             //相手1減らす
-            ene_life--
-            app.ene_rebone = false
             ene_rebones()
+            app.ene_rebone = false
+            print("func enerebone")
+          
         }
         
         if dead{
@@ -395,12 +527,34 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             dead = false
             app.controller.sendMes("dead")
         }
-        
+      
         if rebone {
             //自分1減らす
-            rebones()
             rebone = false
             start = false
+            
+            rebones()
+           
+            
+            bx = x
+            by = y + 20
+            ball = SKSpriteNode(color:UIColor.yellowColor(),size:CGSizeMake(b_width, b_height))
+            ball.position = CGPointMake(bx, by)
+            ball.physicsBody = SKPhysicsBody(rectangleOfSize: CGSizeMake(b_width, b_height))
+            ball.physicsBody?.usesPreciseCollisionDetection = true
+            ball.physicsBody?.collisionBitMask = ballCategory
+            ball.physicsBody?.contactTestBitMask = blockCategory|deadCategory|playerCategory
+            ball.physicsBody?.allowsRotation = false
+            ball.physicsBody?.restitution = 1
+            ball.physicsBody?.friction = 0
+            ball.physicsBody?.linearDamping = 0
+            self.turn = false
+            
+            x = CGRectGetMidX(self.frame)
+            y = CGRectGetMinY(self.frame) + 100
+            player.position = CGPointMake(x,y)
+            
+            self.addChild(ball)
             
             app.controller.sendMes("rebone")
             
@@ -430,9 +584,8 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         }
         
         if self.ball.position.y <= 30 && app.myturn && !turn{
-            turn = true
+            self.turn = true
             if(life > 1){
-                life--
                 rebone = true
             }else{
                 dead = true
@@ -463,10 +616,14 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
             switch self.btntag {
             case 0:
                 self.player.position.x -= 5
-                
+                if !start{
+                    self.ball.position.x -= 5
+                }
             case 3:
                 self.player.position.x += 5
-                
+                if !start{
+                    self.ball.position.x += 5
+                }
             default:
                 break
             }
@@ -475,4 +632,6 @@ class GameScene: SKScene,SKPhysicsContactDelegate {
         }
         
     }
+    
+    
 }
